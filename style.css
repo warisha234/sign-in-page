@@ -1,0 +1,122 @@
+body {
+    background-color: #A69FAE;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 40px;
+}
+.main {
+    background-color: white;
+    width: 800px;
+    height: 450px;
+    margin: 50px auto;
+    border: 10px solid #A69FAE;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.side-image {
+    background-color: purple;
+    height: 400px;
+    width: 300px;
+    margin: 30px 20px 0 20px;
+    border-radius: 10px;
+}
+h1 {
+    color: #A69FAE;
+    font-size: 40px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.title {
+    color: rgb(33, 10, 33);
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+input {
+    display: block;
+}
+.one, .two {
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #A69FAE;
+    padding-left: 10px;
+}
+button {
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 410px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #A69FAE;
+    background-color: #A69FAE;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.end {
+    margin-top: 20px;
+    margin-left: 25px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .main {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .side-image {
+        width: 100%;
+        height: 200px;
+        margin: 0 0 20px 0;
+    }
+    .one, .two, button {
+        width: 90%;
+        margin-left: 0;
+    }
+    .end {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 24px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    .title {
+        font-size: 16px;
+    }
+    .side-image {
+        height: 150px;
+    }
+    .one, .two, button {
+        width: 100%;
+        font-size: 14px;
+    }
+    button {
+        height: 38px;
+        font-size: 16px;
+    }
+}
